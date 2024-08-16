@@ -1,49 +1,5 @@
-#gola{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    background-color: #d54d20;
-    filter: blur(20px);
-    animation: move 2s  infinite linear;
-}
-#gola1{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    background-color: #e65c17;
-    filter: blur(20px);
-    animation: move1 4s infinite linear;
-}
 
-
-@keyframes move {
-    from {
-        transform: translate(-10%, 10%);
-    }
-    to {
-        transform: translate(10%, -20%);
-    }
-}
-@keyframes move1 {
-    from {
-        transform: translate(-10%, -10%);
-    }
-    to {
-        transform: translate(50%, -20%);
-    }
-}
-/* #scroll{
-    animation: scroller 20s linear infinite;
-} */
 #scroll::-webkit-scrollbar{
     display: none;
 }
 
-/* @keyframes scroller {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-} */

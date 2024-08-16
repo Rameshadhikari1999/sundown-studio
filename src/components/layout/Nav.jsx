@@ -60,12 +60,12 @@ const Nav = () => {
   }
  
   return (
-    <nav className="relative w-full flex items-center justify-between px-5 py-8">
+    <nav className="relative w-full flex items-center justify-between px-5 py-8 bg-[#EFEAE3]">
       <img onClick={handleLogoClick} className="w-1/3 lg:w-[10%] cursor-pointer" src={logo} alt="logo" />
 
       {disWidth && <ul className="flex gap-3 transition-all">
         {menu.map((item, index) => (
-           <li key={index} className="border-[1px] text-gray-800 relative border-gray-400 px-4 py-1 rounded-3xl after:content-[''] after:absolute after:-bottom-[100%] after:left-0 after:w-full after:h-full after:bg-black after:rounded-full after:transition-all after:hover:bottom-0 overflow-hidden cursor-pointer hover:text-white">
+           <li key={index} className="border-[1px] text-gray-800 relative border-gray-400 px-4 py-1 rounded-3xl after:content-[''] after:absolute after:-bottom-[100%] after:left-0 after:w-full after:h-full after:bg-black after:rounded-full after:transition-all after:duration-300 after:ease-linear after:hover:bottom-0 overflow-hidden cursor-pointer hover:text-white">
            <Link className="relative z-10 font-thin  text-xs" to={`/${item.toLowerCase()}`}>
              {item}
            </Link>
